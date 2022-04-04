@@ -18,6 +18,13 @@ function About() {
           <a className="link" href={Resume} target="_blank">
             Download Resume
           </a>
+          <a
+            className="link"
+            href="https://sarvani1997.github.io/dev-blog/blog/"
+            target="_blank"
+          >
+            Dev Blog
+          </a>
         </div>
         <div className="photo">
           <img src={photo} alt="Image" />

@@ -5,11 +5,16 @@
   margin: 50px 0px 20px 0px;
 }
 
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+
 .screenshot {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /*width: 1850px;*/
+  width: 60vw;
 }
 
 .screenshot img {

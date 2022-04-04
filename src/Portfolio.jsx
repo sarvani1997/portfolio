@@ -42,19 +42,21 @@ let work = [
 
 function Porfolio() {
   return (
-    <div className="portfolio">
+    <div>
       <div className="portfolio-title">My Recent Work</div>
-      <div className="screenshot">
-        {work.map((w) => {
-          return (
-            <div className="image">
-              <a href={w.link} target="_blank">
-                <img src={w.screenshot} alt={w.title} />
-              </a>
-              <h3 className="title">{w.title}</h3>
-            </div>
-          );
-        })}
+      <div className="portfolio">
+        <div className="screenshot">
+          {work.map((w) => {
+            return (
+              <div className="image">
+                <a href={w.link} target="_blank">
+                  <img src={w.screenshot} alt={w.title} />
+                </a>
+                <h3 className="title">{w.title}</h3>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
