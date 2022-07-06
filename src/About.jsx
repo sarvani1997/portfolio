@@ -2,7 +2,7 @@ import "./About.css";
 
 import photo from "./images/photo1.jpeg";
 
-import Resume from "./Resume.pdf";
+import Resume from "./images/Resume.pdf";
 
 function About() {
   return (

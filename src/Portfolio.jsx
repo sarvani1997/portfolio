@@ -12,18 +12,21 @@ let work = [
     title: "My Journal App",
     desciption: "A web app that lets users to note down thier daily work.",
     link: "https://journal-cf0q.onrender.com/",
+    git: "https://github.com/sarvani1997/journal-app",
   },
   {
     screenshot: periodTracker,
     title: "Period  Tracker",
     desciption: "Here, the user can track and predict their period.",
     link: "https://period-tracker.onrender.com/",
+    git: "https://github.com/sarvani1997/period-tracker",
   },
   {
     screenshot: reddit,
     title: "Reddit",
     desciption: "Reddit clone application.",
     link: "https://reddit.onrender.com/sign_up",
+    git: "https://github.com/sarvani1997/reddit",
   },
   {
     screenshot: craneMaintenace,
@@ -37,6 +40,7 @@ let work = [
     desciption:
       "This web application is to record and manage payment details in the farm near Odissa.",
     link: "https://sun-rise-egg-farm.onrender.com/",
+    git: "https://github.com/sarvani1997/sunshine_egg_farm",
   },
 ];
 
@@ -49,9 +53,19 @@ function Porfolio() {
           {work.map((w) => {
             return (
               <div className="image">
-                <a href={w.link} target="_blank">
+                <div className="overlap">
                   <img src={w.screenshot} alt={w.title} />
-                </a>
+                  <div className="redirect-btns">
+                    {w.git && (
+                      <a href={w.git} target="_blank" className="btn-link">
+                        Git Repo
+                      </a>
+                    )}
+                    <a href={w.link} target="_blank" className="btn-link">
+                      View Website
+                    </a>
+                  </div>
+                </div>
                 <h3 className="title">{w.title}</h3>
               </div>
             );

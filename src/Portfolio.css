@@ -1,6 +1,6 @@
 .portfolio-title {
   font-size: 75px;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
   text-align: center;
   margin: 50px 0px 20px 0px;
 }
@@ -34,6 +34,7 @@
   align-items: center;
   width: 450px;
   padding: 25px;
+  /*visibility: hidden;*/
 }
 
 .title {
@@ -44,17 +45,70 @@
   padding: 3px;
 }
 
+.overlap {
+  position: relative;
+}
+
+.redirect-btns {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  display: none;
+}
+
+.image:hover .redirect-btns {
+  display: block;
+}
+
+.btn-link {
+  padding: 10px;
+  color: white;
+  margin: 0px 5px 0px 5px;
+  background-color: indianred;
+  text-decoration: none;
+  border: solid white 2px;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+
+.btn-link:hover {
+  opacity: 80%;
+  color: indianred;
+  border: solid indianred 2px;
+  background-color: #faeee7;
+  font-weight: bolder;
+}
+
 @media only screen and (max-width: 600px) {
   div.screenshot img {
     width: 300px;
     height: 200px;
   }
 
-  .image {
-    width: 300px;
-  }
   .portfolio-title {
     font-size: 50px;
+  }
+
+  .btn-link {
+    padding: 5px;
+    color: white;
+    margin: 0px 5px 0px 5px;
+    background-color: indianred;
+    text-decoration: none;
+    border: solid white 2px;
+    font-weight: bolder;
+    border-radius: 4px;
+  }
+
+  .overlap {
+    position: relative;
+  }
+
+  .redirect-btns {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    display: none;
   }
 }
 
