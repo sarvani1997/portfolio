@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import './About.css';
+import "./About.css";
 
-import photo from './photo1.jpeg';
-import GitHub from './GitHub.png';
-import gmail from './gmail.png';
-import Resume from './Resume.pdf';
+import photo from "./images/photo1.jpeg";
+
+import Resume from "./Resume.pdf";
 
 function About() {
   return (
