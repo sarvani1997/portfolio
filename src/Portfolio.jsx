@@ -5,6 +5,7 @@ import craneMaintenace from "./images/craneMaintenace.png";
 import sunriseEggsFarm from "./images/sunriseEggsFarm.png";
 import reddit from "./images/reddit.png";
 import periodTracker from "./images/periodTracker.png";
+import whileIEat from "./images/whileIEat.png";
 
 let work = [
   {
@@ -41,6 +42,14 @@ let work = [
       "This web application is to record and manage payment details in the farm near Odissa.",
     link: "https://sun-rise-egg-farm.onrender.com/",
     git: "https://github.com/sarvani1997/sunshine_egg_farm",
+  },
+  {
+    screenshot: whileIEat,
+    title: "While I Eat",
+    desciption:
+      "This web application is to view popular movies and tv shows and their streamimg platform.",
+    link: "https://while-i-eat.onrender.com/",
+    git: "https://github.com/sarvani1997/WhileIEat",
   },
 ];
 
