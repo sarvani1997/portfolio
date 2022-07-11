@@ -11,18 +11,18 @@ function About() {
         <div className="name">
           <p>Hello,</p>
           <h4>I'm Sarvani</h4>
-          <p>Jr. Front-end Developer</p>
+          <p>Full-Stack Developer</p>
 
           <a className="link" href={Resume} target="_blank">
             Download Resume
           </a>
-          <a
+          {/*  <a
             className="link"
             href="https://sarvani1997.github.io/dev-blog/blog/"
             target="_blank"
           >
             Dev Blog
-          </a>
+          </a>*/}
         </div>
         <div className="photo">
           <img src={photo} alt="Image" />
